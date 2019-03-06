@@ -41,7 +41,8 @@ namespace delegateAndEvents
     {
         static void Main(string[] args)
         {
-            //TO DO : Call Method2 from the DelegateExcercises Class
+            DelegateExcercises a = new DelegateExcercises();
+            a.Method2();
         }
     }
     
