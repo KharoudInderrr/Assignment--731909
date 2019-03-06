@@ -39,6 +39,10 @@ namespace delegateAndEvents
 {
     class Program
     {
-        static void main(string[]  args)
+        static void Main(string[] args)
+        {
+            //TO DO : Call Method2 from the DelegateExcercises Class
+        }
     }
+    
 }
