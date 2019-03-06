@@ -23,32 +23,34 @@ namespace delegateAndEvents
 
         public class DelegateExcercises
         {
-            public delegate void MyDelegate();
-            void Method1()
+        public delegate int MyDelegate(int intvalue);
+            public int Method1(int intMethod1)
             {
-                Console.WriteLine("Method 1");
-                Console.ReadLine();
+            return intMethod1 * 2;
             }
-            public void Method2()
+            public int Method2(int intMethod2)
             {
-                MyDelegate myDelegate = new MyDelegate(Method1);
-                myDelegate(50);
+                return int intMethod2 * 10;
             }
-        }
+        public voidMethod3()
+        { 
+        MyDelegate myDelegate = new MyDelegate(Method1);
+        int result1 = myDelegate(10);
+        System.Console.WriteLine(result1);
+      myDelegate = new MyDelegate(Method2);
+        int result2 = myDelegate(10);
+        System.Console.WriteLine(result2);
     }
-
-
-
-
-namespace delegateAndEvents
-{
-    class Program
-    {
         static void Main(string[] args)
         {
             DelegateExcercises a = new DelegateExcercises();
-            a.Method2();
+            a.Method3();
+
         }
     }
     
-}
+        
+    
+
+
+
