@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace delegateAndEvents
 {
-    class Program
-    {
-        
+       
             //Name 1 - Inderjeet Singh
             //ID - c0731909
 
@@ -32,5 +30,15 @@ namespace delegateAndEvents
                 myDelegate();
             }
         }
+    }
+
+
+
+
+namespace delegateAndEvents
+{
+    class Program
+    {
+        static void main(string[]  args)
     }
 }
