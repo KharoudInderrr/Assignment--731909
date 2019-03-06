@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Assignment__731909
+namespace delegateAndEvents
 {
     class Program
     {
-        static void Main(string[] args)
-        {
+        
             //Name 1 - Inderjeet Singh
             //ID - c0731909
 
@@ -17,14 +16,20 @@ namespace Assignment__731909
             //Id - C0730507
 
 
-        }
+        
 
         public class DelegateExcercises
         {
             public delegate void MyDelegate();
             void Method1()
             {
-          
+                Console.WriteLine("Method 1");
+                Console.ReadLine();
+            }
+            public void Method2()
+            {
+                MyDelegate myDelegate = new MyDelegate(Method1);
+                myDelegate();
             }
         }
     }
